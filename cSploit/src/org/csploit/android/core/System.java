@@ -150,7 +150,6 @@ public class System
       Logger.debug("initializing System...");
       mStoragePath = getSettings().getString("PREF_SAVE_PATH", Environment.getExternalStorageDirectory().toString());
       mSessionName = "dsploit-session-" + java.lang.System.currentTimeMillis();
-      mKnownIssues = new KnownIssues();
       mTools = new ToolBox();
       mPlugins = new ArrayList<Plugin>();
       mOpenPorts = new SparseIntArray(3);
